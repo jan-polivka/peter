@@ -28,4 +28,4 @@ jobs:
           [ "$VERSION" == "main" ] && VERSION=latest
           echo IMAGE_ID=$IMAGE_ID
           echo VERSION=$VERSION
-          docker push $IMAGE_ID:$VERSION
+          docker push $GITHUB_REPOSITORY:$VERSION
